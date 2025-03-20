@@ -1,4 +1,4 @@
-body, html{
+body{
     width: 100vw;
     height: 100vh;
     margin: 0%;
@@ -214,11 +214,27 @@ h1{
     max-width: 500px;
     height: 400px;
 }
-
+.outputWrapper{
+    width: 90%;
+    flex: 1;
+    padding:2px;
+    background-color: #636363;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: wrap;
+}
 p{
     color: rgba(187, 187, 187, 0.892);
     max-width: 90%;
     text-align: justify;
+    width: 95%;
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header{
