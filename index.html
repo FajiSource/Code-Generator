@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Code Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content"> 
+            <h1>Code Generator</h1>
+            <div class="textInputWrapper">
+                <input placeholder="Enter your text here" id="input" type="text" class="textInput">
+            </div>
+            <button class="btn" onclick="generate()"> Generate</button>
+        </div>
+
+        <div class="output">
+            <h1>Generated Code</h1>
+            <p id="generatedc-code"></p>
+        </div> 
+    </div>
+   <div class="header">
+
+    <h1>DECODE</h1>
+   </div>
+    <div class="container">
+        <div class="content"> 
+            <h1>Decode</h1>
+            <div class="textInputWrapper">
+                <input placeholder="Enter your code here" id="decode" type="text" class="textInput">
+            </div>
+            <button class="btn" onclick="decode()">Read</button>
+        </div>
+
+        <div class="output">
+            <h1>Decoded Code</h1>
+            <p id="generated-code"></p>
+        </div> 
+    </div>
+
+    <script>
+        function decode() {
+            var input = document.getElementById('decode').value;
+            var output = '';
+            for (var i = 0; i < input.length; i++) {
+                output += input.charCodeAt(i).toString(16);
+            }
+            document.getElementById('generated-code').innerText = output;
+        }
+        function generate() {
+            var input = document.getElementById('input').value;
+            var output = '';
+            for (var i = 0; i < input.length; i++) {
+                output += input.charCodeAt(i).toString(16);
+            }
+            document.getElementById('generatedc-code').innerText = output;
+        }
+    </script>
+</body>
+</html>
