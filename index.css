@@ -208,7 +208,7 @@ h1{
     padding: 10px;
     border-radius: 20px;
     background-color: #353935;
-    border: 1px solid rgb(187, 187, 187);
+    border: 1px solid rgb(104, 104, 104);
     box-shadow: 0 10px 10px 5px rgba(74, 74, 74, 0.5);
     flex: 1;
     max-width: 500px;
@@ -217,15 +217,16 @@ h1{
 .outputWrapper{
     width: 90%;
     flex: 1;
-    padding:2px;
-    background-color: #636363;
+    padding:5px;
+    border-radius: 2px;
+    background-color: #454545;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: thin;
     text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    white-space: wrap;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    color: rgb(255, 255, 255);
 }
 p{
     color: rgba(187, 187, 187, 0.892);
